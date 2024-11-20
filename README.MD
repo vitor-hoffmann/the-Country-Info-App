@@ -1,17 +1,20 @@
-The Country Info App
-This project consists of a frontend and backend application that work together to provide country-related information, such as population data, bordering countries, and flags.
+# The Country Info App
 
-Prerequisites
+This project consists of a **frontend** and **backend** application that work together to provide country-related information, such as population data, bordering countries, and flags.
+
+## Prerequisites
+
 Ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-Node.js (LTS version recommended)
-npm (comes with Node.js)
-Getting Started
+## Getting Started
+
 Follow the steps below to run the application locally.
 
-Clone the Repository
-bash
-Copy code
+### Clone the Repository
+
+```bash
 git clone <repository-url>
 cd the-Country-Info-App
 Setting Up the Backend
@@ -29,13 +32,10 @@ Configure Environment Variables: Create a .env file in the backend directory and
 
 env
 Copy code
-
 # Backend Server Port
-
 PORT=5000
 
 # External API URLs
-
 NAGER_API_URL=https://date.nager.at/api/v3
 COUNTRIES_POPULATION_API=https://countriesnow.space/api/v0.1/countries/population
 COUNTRIES_FLAG_API=https://countriesnow.space/api/v0.1/countries/flag/images
@@ -89,15 +89,15 @@ Folder Structure
 bash
 Copy code
 the-Country-Info-App/
-├── backend/ # Backend application (Express.js)
-│ ├── .env # Environment variables
-│ ├── package.json # Backend dependencies
-│ └── server.js # Backend entry point
-├── frontend/ # Frontend application (Next.js)
-│ ├── .env # Environment variables
-│ ├── package.json # Frontend dependencies
-│ └── app/ # Next.js App Directory
-├── README.md # Project instructions
+├── backend/             # Backend application (Express.js)
+│   ├── .env             # Environment variables
+│   ├── package.json     # Backend dependencies
+│   └── server.js        # Backend entry point
+├── frontend/            # Frontend application (Next.js)
+│   ├── .env             # Environment variables
+│   ├── package.json     # Frontend dependencies
+│   └── app/             # Next.js App Directory
+├── README.md            # Project instructions
 Notes
 Ensure that both the backend and frontend servers are running simultaneously for the app to work correctly.
 If you encounter any issues, verify that your .env files are correctly set up.
